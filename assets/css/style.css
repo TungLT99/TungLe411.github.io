@@ -31,6 +31,10 @@ html
     right: 0;
 }
 /* Cho các mục trong menu lên 1 hàng */
+.header .nav
+{
+    z-index: 5;
+}
 .header .nav li
 {
     display: inline-block;
@@ -364,9 +368,10 @@ html
 {
     margin-right: 10px;
 }
-.footer .footer-info a
+.footer a
 {
-    color: white;
+    color: blue;
+    text-decoration: none;
 }
 .footer .footer-info .icon
 {
