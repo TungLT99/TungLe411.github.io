@@ -8,6 +8,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
     <div class="container">
@@ -106,21 +107,21 @@
                     <h4>OSAKA</h4>
                     <h4 class="date-time">Fri 27 Nov 2020</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button>Join!!</button>
+                    <button class="js-btn-location">Join!!</button>
                 </div>
                 <div class="thumbnail">
                     <img src="assets/images/school_2.jpg" alt="" class="background">
                     <h4>TOKYO</h4>
                     <h4 class="date-time">Fri 27 Nov 2020</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button>Join!!</button>
+                    <button class="js-btn-location">Join!!</button>
                 </div>
                 <div class="thumbnail">
                     <img src="assets/images/school_3.jpg" alt="" class="background">
                     <h4>HOKKAIDO</h4>
                     <h4 class="date-time">Fri 27 Nov 2020</h4>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button>Join!!</button>
+                    <button class="js-btn-location">Join!!</button>
                 </div>
             </div>
         </div>
@@ -159,6 +160,57 @@
             <img src="assets/images/School2.jpg" alt="">
         </div>
         <!-- End Content -->
+        <!-- Begin Modal -->
+        <div class="modal js-modal">
+            <div class="modal-container">
+                <div class="modal-form">
+                    <div class="header-form">
+                        <div class="header-title">
+                                <ion-icon name="school-outline"></ion-icon>
+                                <h4>JOIN OUR SCHOOL</h4>
+                           
+                        </div>
+                        <div class="close-modal js-close-modal">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </div>
+                        
+                    </div>
+                    <div class="body-form">
+                        <div class="row">
+                            <label for=""><ion-icon name="person-sharp"></ion-icon>   Your Name</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" placeholder=" Enter Your Name">                        
+                        </div>
+                        <div class="row">
+                        <label for=""><ion-icon name="briefcase-sharp"></ion-icon>   Select School</label>
+                        </div>
+                        <div class="row">
+                            <select name="school" id="school" >
+                                <option value="Tokyo"> Tokyo</option>
+                                <option value="Osaka">  Osaka</option>
+                                <option value="Hokkaido">  Hokkaido</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for=""><ion-icon name="call-sharp"></ion-icon>   Phone Number</label>
+                        </div>
+                        <div class="row">
+                            <input type="text" placeholder="  Enter your phonenumber">
+                        </div>
+                        <div class="row">
+                            <button class="js-close-btn">OK</button>
+                        </div>
+                        
+                       
+                        
+                        
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- End Modal -->
         <!-- Begin Footer -->
         <div class="footer">
             <p>Design and Copyright by <a href="https://www.facebook.com/99thanhtung" target="_blank">Tùng Lê</a></p>
@@ -171,6 +223,28 @@
         </div>
         <!-- End Footer -->
     </div>
+    
+
+    <script>
+        const locationBtns= document.querySelectorAll('.js-btn-location')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('js-modal-close')
+        const modalClose2 = document.querySelector('js-close-modal')
+        function OpenLocation()
+        {
+            modal.classList.add('open')
+        }
+        function CloseLocation()
+        {
+            modal.classList.remove('open')
+        }
+        for (const locationBtn of locationBtns)
+        {
+            locationBtn.addEventListener('click',OpenLocation)
+        }
+        modalClose2.addEventListener('click',CloseLocation)
+    </script>
+
     
 </body>
 </html>
