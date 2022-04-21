@@ -1,250 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUR SCHOOL</title>
+  <head>
+    <title>The School</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <!-- Begin Menu and Menudropper -->
-            <ul class="nav">
-                <li><a href="">HOME</a></li>
-                <li><a href="">STUDENT</a></li>
-                <li><a href="">LOCATION</a></li>
-                <li>
-                    <a href="">MORE <span><ion-icon name="caret-down-outline"></ion-icon></span></a>
-                    <ul class="sub-nav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- End Menu and Menudropper -->
-            <!-- Begin search-button -->
-            <div class="search-button">
-                <ion-icon name="search"></ion-icon>
-            </div>
-            <!-- End search-button -->
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://www.facebook.com/99thanhtung">
+            <img src="images/logo-01.png" alt="logo" id="logo" />
+          </a>
         </div>
-        <!-- Begin Slider -->
-        <div class="slider">
-            <div class="image">
-                <img src="assets/images/602084.jpg" alt="">
-            </div>
-            <div class="text">
-                <h3>The School</h3>
-                <p>School in the Spring</p>
-            </div>
-        </div>
-        <!-- End Slider -->
 
-        <!-- Begin Content -->
-        <div class="band">
-            <h2>STUDENT</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati error officiis nam esse minus earum, aperiam aut ad placeat, sint quia molestias dolorum, natus laboriosam velit eum est laborum accusamus.
-            Assumenda perferendis odit eligendi, est amet quo natus maxime sit eveniet quaerat! Sapiente voluptatum cumque aut, architecto atque quidem voluptas provident exercitationem maxime porro quia incidunt impedit qui aperiam neque.
-            Accusamus qui totam sunt ut corrupti hic dolorem placeat esse aliquid? Commodi ad sed iste, a iure reprehenderit est harum officia nam sequi accusamus asperiores fuga molestias distinctio modi deserunt.</p>
-            <h3>Some Student Of Our School</h3> <br>
-            <!-- Begin student -->
-            <div class="student">
-                <div class="info-student">
-                    <h4>Chitoge</h4>
-                    <img src="assets/images/Chitoge.jpg" alt="">
-                    <h4>Class 3B</h4>
-                    <a href="https://nisekoi.fandom.com/wiki/Chitoge_Kirisaki" target="_blank">See More Info</a>
-                </div>
-                <div class="info-student">
-                    <h4>Anna</h4>
-                    <img src="assets/images/Anna-senpai.jpg" alt="">
-                    <h4>Class 4C</h4>
-                    <a href="https://yan-dere.fandom.com/wiki/Anna_Nishikinomiya" target="_blank">See More Info</a>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#">HOME</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
+                >ACCOUNT <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="Form-Register.html">REGISTER</a></li>
+                <li><a href="#">LOG IN</a></li>
+                <li><a href="#">YOUR ACCOUNT</a></li>
+              </ul>
+            </li>
+            <li><a href="#student">STUDENT</a></li>
+            <li><a href="#choose-school">LOCATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+          <form class="navbar-form navbar-right" action="/action_page.php">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search" />
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="Form-Register.html"
+                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-log-in"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
 
-                </div>
-                <div class="info-student">
-                    <h4>Marin</h4>
-                    <img src="assets/images/marin.jpg" alt="">
-                    <h4>Class 3A</h4>
-                    <a href="https://sono-bisque-doll-wa-koi-wo-suru.fandom.com/wiki/Marin_Kitagawa" target="_blank">See More Info</a>
+    <!-- Begin Slider -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
 
-                </div>
-            </div>
-            <!-- End student -->
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/1.jpg" alt="Los Angeles" />
+          <div class="carousel-caption">
+            <h3>The School</h3>
+            <p>Our School in the autumn</p>
+          </div>
         </div>
-        <!-- Begin Location -->
-        <div class="location">
-            <h2>LOCATION</h2>
-            <p>Choose a school you want to join</p>
-            <div class="status">
-                <div class="status-info">
-                    <p>Osaka</p>
-                    <p>Available</p>
-                </div>
-                <hr>
-                <div class="status-info">
-                    <p>Tokyo</p>
-                    <p>Full</p>
-                  
-                </div>
-                <hr>
-                <div class="status-info">
-                    <p>Hokkaido</p>
-                    <p>Available</p>
-        
-                </div>
-                <hr>
-            </div>
-            <div class="location-school">
-                <div class="thumbnail">
-                    <img src="assets/images/school_1.jpg" alt="" class="background">
-                    <h4>OSAKA</h4>
-                    <h4 class="date-time">Fri 27 Nov 2020</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button class="js-btn-location">Join!!</button>
-                </div>
-                <div class="thumbnail">
-                    <img src="assets/images/school_2.jpg" alt="" class="background">
-                    <h4>TOKYO</h4>
-                    <h4 class="date-time">Fri 27 Nov 2020</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button class="js-btn-location">Join!!</button>
-                </div>
-                <div class="thumbnail">
-                    <img src="assets/images/school_3.jpg" alt="" class="background">
-                    <h4>HOKKAIDO</h4>
-                    <h4 class="date-time">Fri 27 Nov 2020</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi eos magni sunt placeat sit modi ipsam nisi ex, adipisci perspiciatis maiores eius neque obcaecati </p>
-                    <button class="js-btn-location">Join!!</button>
-                </div>
-            </div>
+
+        <div class="item">
+          <img src="images/2.jpg" alt="Chicago" />
+          <div class="carousel-caption">
+            <h3>The School In Spring</h3>
+            <p>Our school in the spring</p>
+          </div>
         </div>
-        <!-- End Location -->
-        <!-- Begin Contact -->
-        <div class="contact">
-            <h2>CONTACT</h2>
-            <p>Want to Join ? Give us your infomation</p>
-            <div class="info">
-                <div class="info-school">
-                    <div class="info-line">
-                        <ion-icon name="location-outline"></ion-icon>
-                        <a href="">Tokyo</a>
-                    </div>
-                    <div class="info-line">
-                        <ion-icon name="mail-outline"></ion-icon>
-                         <a href="">school123@gmail.com</a>
-                    </div>
-                    <div class="info-line">
-                        <ion-icon name="call-outline"></ion-icon> 
-                        <a href="">0123456789</a>
-                    </div>
-                    
-                   
-                </div>
-                <div class="your-info">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                    <button>Send</button>
-                </div>
-            </div>
+
+        <div class="item">
+          <img src="images/3.jpg" alt="New York" />
+          <div class="carousel-caption">
+            <h3>Season summer</h3>
+            <p>In the summer...</p>
+          </div>
         </div>
-        <!-- End Contact -->
-        <div class="img-footer">
-            <img src="assets/images/School2.jpg" alt="">
+        <div class="item">
+          <img src="images/4.jpg" alt="New York" />
+          <div class="carousel-caption">
+            <h3>Winter</h3>
+            <p>And the Winter</p>
+          </div>
         </div>
-        <!-- End Content -->
-        <!-- Begin Modal -->
-        <div class="modal js-modal">
-            <div class="modal-container">
-                <div class="modal-form">
-                    <div class="header-form">
-                        <div class="header-title">
-                                <ion-icon name="school-outline"></ion-icon>
-                                <h4>JOIN OUR SCHOOL</h4>
-                           
-                        </div>
-                        <div class="close-modal js-close-modal">
-                            <ion-icon name="close-circle-outline"></ion-icon>
-                        </div>
-                        
-                    </div>
-                    <div class="body-form">
-                        <div class="row">
-                            <label for=""><ion-icon name="person-sharp"></ion-icon>   Your Name</label>
-                        </div>
-                        <div class="row">
-                            <input type="text" placeholder=" Enter Your Name">                        
-                        </div>
-                        <div class="row">
-                        <label for=""><ion-icon name="briefcase-sharp"></ion-icon>   Select School</label>
-                        </div>
-                        <div class="row">
-                            <select name="school" id="school" >
-                                <option value="Tokyo"> Tokyo</option>
-                                <option value="Osaka">  Osaka</option>
-                                <option value="Hokkaido">  Hokkaido</option>
-                            </select>
-                        </div>
-                        <div class="row">
-                            <label for=""><ion-icon name="call-sharp"></ion-icon>   Phone Number</label>
-                        </div>
-                        <div class="row">
-                            <input type="text" placeholder="  Enter your phonenumber">
-                        </div>
-                        <div class="row">
-                            <button class="js-close-btn">OK</button>
-                        </div>
-                        
-                       
-                        
-                        
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-        <!-- End Modal -->
-        <!-- Begin Footer -->
-        <div class="footer">
-            <p>Design and Copyright by <a href="https://www.facebook.com/99thanhtung" target="_blank">Tùng Lê</a></p>
-            <div class="footer-info">
-                <p>Contact me</p>
-                <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
-                <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
-                <div class="icon"><ion-icon name="logo-facebook"></ion-icon></div>
-            </div>
-        </div>
-        <!-- End Footer -->
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-    
+    <!-- End Slider -->
 
-    <script>
-        const locationBtns= document.querySelectorAll('.js-btn-location')
-        const modal = document.querySelector('.js-modal')
-        const modalClose = document.querySelector('js-modal-close')
-        const modalClose2 = document.querySelector('js-close-modal')
-        function OpenLocation()
-        {
-            modal.classList.add('open')
-        }
-        function CloseLocation()
-        {
-            modal.classList.remove('open')
-        }
-        for (const locationBtn of locationBtns)
-        {
-            locationBtn.addEventListener('click',OpenLocation)
-        }
-        modalClose2.addEventListener('click',CloseLocation)
-    </script>
+    <!-- Begin student -->
+    <div class="container text-center width60" id="student">
+      <h4 class="title">OUR STUDENTS</h4>
+      <h4 class="small text-muted small-title">Some of our student</h4>
+      <p class="text-justify pd8">
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+          <p>- Kitagawa Marin -</p>
+          <img src="images/marin.jpg" alt="" class="student-pic" />
+          <p class="mgt8px">Class 3B</p>
+          <button class="btn btn-info">See more info</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+          <p>- Tomori Nao -</p>
+          <img src="images/tomori.jpg" alt="" class="student-pic" />
+          <p class="mgt8px">Class 3A</p>
+          <button class="btn btn-info">See more info</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
+          <p>- Mitsuha -</p>
+          <img src="images/mitsuha.jpg" alt="" class="student-pic" />
+          <p class="mgt8px">Class 3C</p>
+          <button class="btn btn-info">See more info</button>
+        </div>
+      </div>
+    </div>
+    <!-- End student -->
 
-    
-</body>
+    <!-- Begin Choose school -->
+    <div class="container-fluid pd64" id="choose-school">
+      <div class="container width60 text-center text-white">
+        <h4 class="title">CHOOSE SCHOOL</h4>
+        <h4 class="small text-muted small-title">
+          Choose school you want to join
+        </h4>
+        <div class="row line34">
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
+          >
+            Tokyo
+          </p>
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
+          >
+            Available
+          </p>
+        </div>
+        <div class="row line34">
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
+          >
+            Hokaiddo
+          </p>
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
+          >
+            Available
+          </p>
+        </div>
+        <div class="row line34">
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
+          >
+            Chiba
+          </p>
+          <p
+            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
+          >
+            Full
+          </p>
+        </div>
+
+        <div class="row text-left mgt8px">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail white-bg text-black pd0">
+              <img
+                class="width100"
+                src="images/school_1.jpg"
+                alt="school tokyo"
+              />
+              <p class="pd8 mgt8px">Tokyo</p>
+              <p class="text-gray pd8">Tokyo - Japan</p>
+              <p class="text-justify pd8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
+                adipisci perspiciatis maiores eius neque obcaecati
+              </p>
+              <a href="" class="btn btn-success mgb8px btn-choose">Join now !!</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail white-bg text-black pd0">
+              <img
+                class="width100"
+                src="images/school_2.jpg"
+                alt="school tokyo"
+              />
+              <p class="pd8 mgt8px">Hokkaido</p>
+              <p class="text-gray pd8">Hokkaido - Japan</p>
+              <p class="text-justify pd8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
+                adipisci perspiciatis maiores eius neque obcaecati
+              </p>
+              <a href="" class="btn btn-success mgb8px btn-choose">Join now !!</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="thumbnail white-bg text-black pd0">
+              <img
+                class="width100"
+                src="images/school_3.jpg"
+                alt="school tokyo"
+              />
+              <p class="pd8 mgt8px">Chiba</p>
+              <p class="text-gray pd8">Chiba - Japan</p>
+              <p class="text-justify pd8">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
+                adipisci perspiciatis maiores eius neque obcaecati
+              </p>
+              <a href="" class="btn btn-success mgb8px btn-choose">Join now !!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Choose school -->
+
+    <!-- Begin Contact -->
+    <div class="container width60 text-center pd64" id="contact">
+      <h4 class="title">CONTACT</h4>
+      <h4 class="small text-muted small-title">
+        Give us your infomation
+      </h4>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <div class="row text-left">
+            <ion-icon name="location-sharp" class="icon"></ion-icon>
+            <p class="inline-block fs18">Tokyo,Japan</p>
+          </div>
+          <div class="row text-left">
+            <ion-icon name="call-sharp" class="icon"></ion-icon>
+            <p class="inline-block fs18">0123456789</p>
+          </div>
+          <div class="row text-left">
+            <ion-icon name="mail-sharp" class="icon"></ion-icon>
+            <p class="inline-block fs18">tungtudonghoa@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6 pd0">
+          <div class="row mgb8px">
+              <input type="text" placeholder="Name" class="pull-left">
+              <input type="email" placeholder="Email" class="pull-right">
+          </div>
+          <div class="row mgb8px">
+            <input type="text" placeholder="Messenger" class="width100">
+          </div>
+          <div class="row">
+            <button class="btn btn-success pull-right mgt8px mgb8px">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End contact -->
+    <!-- Begin map -->
+    <div class="container-flui text-center text-white" id="join">
+      <h4 class="title">JOIN OUR SCHOOL</h4>
+      <h4 class="small text-muted small-title">Remember join our school</h4>
+      <img src="images/map.jpg" alt="" class="width100">
+
+    </div>
+    <!-- End map -->
+    <!-- Begin footer -->
+    <div class="container text-center" id="footer">
+      <div class="row">
+        <ion-icon class="icon-footer" name="logo-facebook"></ion-icon>
+        <ion-icon class="icon-footer" name="logo-instagram"></ion-icon>
+        <ion-icon class="icon-footer" name="logo-youtube"></ion-icon>
+        <ion-icon class="icon-footer" name="logo-pinterest"></ion-icon>
+        <ion-icon class="icon-footer" name="logo-linkedin"></ion-icon>
+      </div>
+      <div class="row">
+        <p>Power by <span><a href="https://www.facebook.com/99thanhtung">TTung Tự Động Hóa</a></span></p>
+      </div>
+    </div>
+    <!-- End footer -->
+
+  </body>
 </html>
