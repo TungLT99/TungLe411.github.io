@@ -668,7 +668,13 @@ html
 }
 
 /* Responsive */
-
+@media (min-width: 1401px) and (max-width:1600px)
+{
+    #gallery .gallery-title
+    {
+        min-height: 93px;
+    }
+}
     
 
 /* PC */
@@ -685,6 +691,7 @@ html
     #gallery .gallery-title
     {
         font-size: 150%;
+        min-height: 70px;
     }
     #gallery .gallery-price
     {
