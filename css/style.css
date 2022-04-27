@@ -1,217 +1,932 @@
-/* General class */
-.width60 {
-    width: 60%;
+/* Reset Css */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-
-.width100 {
-    width: 100%;
-}
-
-.pd8 {
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.line34 {
-    line-height: 34px;
-}
-
-.pd64 {
-    padding-top: 64px;
-    padding-bottom: 128px;
-}
-
-.pd0 {
+.container-fluid
+{
     padding: 0;
 }
 
-.mglr16 {
-    margin-left: 4px;
-    margin-right: 4px;
-}
-
-.mgt8px {
-    margin-top: 8px;
-}
-
-.mgb8px {
-    margin-bottom: 8px;
-}
-
-.text-white {
-    color: white;
-}
-
-.text-black {
-    color: black;
-}
-
-.text-gray {
-    color: gray;
-}
-
-.white-bg {
-    background-color: white;
-}
-
-.pull-right {
-    float: right;
-}
-.pull-left
+/* General class */
+.wid80
 {
-    float: left;
+    width: 80%;
 }
-.inline-block
+.pd0
 {
-    display: inline-block;
+    padding: 0 !important;
 }
-#logo {
-    width: 110px;
-    height: 30px;
-    margin-top: -5px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
+/* Tạo hiệu ứng cuộn mượt */
+html
+{
+    scroll-behavior: smooth; 
 }
 
-html {
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    
+/* Font */
+
+@font-face{
+    src:url(../font/UpperNow.otf);
+    font-family: UpperNow;
+}
+@font-face{
+    src:url(../font/Now-Light.otf);
+    font-family: UpperLight;
+}
+@font-face{
+    src:url(../font/OpenSans-CondLight.ttf);
+    font-family: OpenSans;
+}
+@font-face{
+    src:url(../font/OpenSans-CondBold.ttf);
+    font-family: OpenSansBold;
+}
+@font-face{
+    src:url(../font/Libertad-Regular.otf);
+    font-family: Libertad;
+}
+@font-face{
+    src:url(../font/AlexBrush-Regular.ttf);
+    font-family: AlexBrush;
 }
 
-body {
-    font-size: 15px;
-    color: black;
+.font1
+{
+    font-family:'UpperNow';
+    font-weight: bold;
+    color: white !important;
+    font-size: 145%;
+}
+.font-upper-now
+{
+    font-family: 'UpperNow';
+}
+.font-light
+{
+    font-family:'UpperLight' ;
+}
+.font-san
+{
+    font-family: 'OpenSans';
+}
+.font-san-bold
+{
+    font-family: 'OpenSansBold';
+}
+.font-libertad
+{
+    font-family: 'Libertad';
+}
+.font-alex
+{
+    font-family: 'AlexBrush';
+}
+.font-white
+{
+    color: white !important;
 }
 
-.navbar {
+
+
+/* Nav Bar */
+#logo
+{
+    width: 170px;
+    /* height: 30px; */
+    margin-top: -15px;
+    margin-left: 50px;
+    padding: 0;
+    opacity: 80%;
+}
+#logo:hover
+{
+    opacity: 100%;
+}
+#logo-nav
+{
+    width: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -31px;
+    position: relative;
+}
+#logo-nav:hover
+{
+    cursor: pointer;
+}
+#glyphicon
+{
+    font-size: 99%;
+}
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0;
-
+    border-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    min-height: 70px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
 }
-
-.navbar-inverse {
-    border-color: rgba(0, 128, 0, 0.758);
-    background-color: rgba(0, 128, 0, 0.758);
-    margin-bottom: 0;
-}
-
 .navbar-inverse .navbar-collapse {
-    border-color: rgba(0, 128, 0, 0.758);
+    border-color: rgba(0, 0, 0, 0.5);
 }
+.navbar-right li
+{
+    transition: all 1s;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    padding: 10px;
 
-.navbar-inverse .navbar-nav>li>a {
-    color: white;
-    transition: all 0.5s;
 }
-
-.navbar-inverse .navbar-nav>li>a:hover {
-    background-color: gray;
+.navbar-right li:hover
+{
+    background-color: red;
 }
 
 .affix {
     top: 0;
     width: 100%;
     z-index: 9999 !important;
-    background-color: rgba(0, 128, 0, 0.749);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-color: rgba(0, 0, 0, 0.7);
+}
+/* .search
+{
+    position: absolute;
+    
+} */
+
+/* Special Coffee */
+.specialCoffee
+{
+    width: 100%;
+    /* height: 100vh; */
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-image:url(../images/banner1.png);
+    background-size: cover;
+}
+#title-special
+{
+    font-size: 600%;
+    margin-top: 16%;
+    margin-bottom: 4%;
+}
+#text-special
+{
+    font-size: 270%;
+    font-weight: 500; 
+    width: 50%;
+    margin: auto;
+    margin-bottom: 3%;
+    /* padding-left: 2%; */
+    /* padding-right: 2%; */
+}
+#btn-readmore
+{
+    background-color: none;
+    background: none;
+    border: 1px solid white;
+    font-size: 200%;    
+    margin-bottom: 5%;
+    transition: all 0.7s;
+}
+#btn-readmore:hover
+{
+    color: black;
+    background-color: white;
 }
 
-.carousel-caption {
-    background-color: rgba(255, 255, 255, 0.692);
-    width: 20%;
-    margin: auto;
+
+/* Css Welcome */
+.welcome
+{
+    background-color: black;
+    padding: 2%;
+}
+#welcome-text
+{
+    font-size: 500%;
+    font-weight: 500;
+}
+
+/* Css About-us */
+.about-us
+{
+    width: 100%;
+    background-image:url(../images/banner2.png);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-size: 150%;
+}
+.about-us >.container
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+/* About0uss left */
+.about-us p
+{
+    width: 60%;
+    margin-top: 2%;
+    word-wrap: break-word;
+    text-indent: 10px;
+    line-height: 1;
+}
+.about-us h3
+{
+    font-size: 200%;
+}
+
+.btn-about-us
+{
+    background-color: #C7A17A;
+    border-radius: 0;
+    padding: 15px;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    font-size: 130%;
+    transition: all 0.5s;
+}
+.btn-about-us:hover
+{
+    background-color: white;
     color: black;
 }
 
-.title {
-    font-size: 30px;
-    letter-spacing: 4px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px 0;
-    font-weight: 400;
-}
-
-#student {
-    padding-top: 64px;
-    margin-bottom: 64px;
-    padding-bottom: 64px;
-}
-
-.small-title {
-    margin: 15px 0;
-    font-size: 15px;
-    line-height: 1.5;
-    font-style: italic;
-}
-
-img.student-pic {
-    width: 100%;
-    transition: all 1s;
-}
-
-img.student-pic:hover {
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-
-/* Choose school */
-#choose-school {
-    background-color: black;
-}
-.btn-choose
+.hr1
 {
-    margin-left: 40%;
-    margin-right: 20%;
+    background-color: white;
+    height: 2px;
+    width: 30%;
 }
 
-/* Contact */
+/* About-us Right */
+.about-us img
+{
+    width: 90%;
+    aspect-ratio: 12/10;
+    margin: auto;
+    position: relative;
+}
 .icon
 {
-    font-size: 20px;
-    width: 30px;
-    margin-top: 4px;
+    width: 100%;
 }
-.fs18
+.icon:hover
 {
-    font-size: 18px;
-    line-height: 1.5;
+    cursor: pointer;
+    opacity: 0.8;
 }
-#contact input
+.about-us-icon
 {
-    padding: 8px;
+    color: white;
+    position: absolute;
+    display: block;
+    margin: auto;
+    font-size: 80px;
+    padding: 33% 34%;
+
 }
 
-#join
+
+/* Css Why Choose Us */
+/* General Class text in this div */
+.title-choose
+{
+    color: #C7A17A;
+    font-size: 160%;
+}
+.text-choose
+{
+    color: white;
+}
+/* Css Choose us */
+.choose-us
+{
+    background-color: #151412;
+    font-size: 160%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+.choose-us>h2
+{
+    font-size: 180%;
+}
+.choose-us>p
+{
+    font-size: 130%;
+}
+.choose-us>.container
+{
+    width: 50%;
+}
+.pdr
+{
+    padding-right: 8%;
+}
+.pdl
+{
+    padding-left: 8%;
+}
+
+
+/* Css Gallery */
+.gallery
+{
+    background-image: url(../images/banner3.png);
+    background-size: cover;
+    width: 100%;
+}
+.gallery >.container
+{
+    margin-top: 4%;
+    width: 70%;
+}
+.gallery .thumbnail
+{
+    /* min-height: 430px; */
+}
+.thumbnail
+{
+    padding: 0;
+    margin: 1%;
+    width: 30%;
+}
+.thumbnail .image
+{
+    background-color: #E2D0BC;
+}
+.thumbnail img
+{
+    width: 80%;
+    margin: 10%;
+}
+#cream-gold
+{
+    width: 40%;
+    margin: 4% 30%;
+}
+#glass-coffee
+{
+    width: 40%;
+    margin: 7% 30%;
+}
+.thumbnail-text
+{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    font-weight: bold;
+}
+.thumbnail .gallery-title
+{
+    color: black;
+    font-size: 200%;
+    font-weight: bolder;
+    margin-top: 12%;
+    margin-bottom: 10%;
+}
+.thumbnail .gallery-price
+{
+    color: #C6A177;
+    font-size: 200%;
+    margin-bottom: 10%;
+}
+.gallery .btn-gallery
+{
+    padding: 1% 2%;
+    font-size: 160%;
+    color: white;
+    background-color: #C7A17A;
+    border-radius: 0;
+    margin-top: 3%;
+    margin-bottom: 1%;
+    transition: all 1s;
+}
+.gallery .btn-gallery:hover
+{
+    background-color: white;
+    color: black;
+}
+
+
+/* Css Blog */
+.blog
+{
+    background-color: black;
+    padding-bottom: 5%;
+}
+.blog .image
+{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.blog .thumbnail
+{
+    background-color: #151412;
+    padding: 0;
+    border-color: #151412;
+    padding-bottom: 1%;
+}
+.blog .thumbnail img
+{
+    width: 100%;
+    margin: auto;
+}
+
+.blog .thumbnail .blog-title
+{
+    font-size: 260%;
+}
+.blog .thumbnail .blog-title-by
+{
+    color: #C6A177;
+    font-size: 160%;
+}
+.blog .thumbnail p
+{
+    font-size: 140%;
+}
+.btn-blog
+{
+    color: #C6A177;
+    font-weight: bold;
+    font-size: 140%;
+    background-color: none;
+    background: none;
+    transition: all 1.5s;
+    padding: 2% 4%;
+    box-sizing: border-box;
+    border: none;
+}
+.btn-blog span
+{
+    padding-left: 10px;
+    padding-top: 2%;
+}
+
+.btn-blog:hover
+{
+    background-color: white;
+}
+/* Css about */
+.about
+{
+    background-image: url(..//images/banner4.jpg);
+    background-size: cover;
+    padding: 4% 0;
+    min-height: 540px;
+
+}
+.about >.container
+{
+    width: 80%;
+}
+.about >.container>img
+{
+    margin-bottom: 2%;
+}
+.about-text
+{
+    font-size: 360%;
+    word-wrap: break-word;
+    max-width: 1100px;
+    margin: auto;
+}
+#signature
+{
+    font-size: 400%;
+    margin-top: 5%;
+}
+
+
+/* Css Contact */
+.contact
+{
+    background-image: url(..//images/Map.PNG);
+    background-size: cover;
+    padding: 3% 0;
+    /* filter: brightness(70%); */
+}
+.form
+{
+    width: 35%;
+    padding: 3% 2%;
+    background-color: #c7a07aa6;
+    position: relative;
+}
+.form input
+{
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: none;
+    background: none;
+    outline: none;
+    font-size: 125%;
+}
+.form .container-fluid input
+{
+    width: 100%;
+}
+.flex-spacebetween
+{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-spacebetween label
+{
+    position: absolute;
+    margin: 1% 0;
+    font-size: 120%;
+}
+.flex-spacebetween input
+{
+    text-indent:10%;
+    width: 100%;
+}
+#subject-row
+{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+#subject-row label
+{
+    position: absolute;
+    font-size: 110%;
+    margin: 1% 0 0;
+}
+#subject-row input
+{
+    text-indent: 4%;
+}
+#messenger-row label
+{
+    margin-bottom: 5%;
+    width: 100%;
+    font-weight: 500;
+    font-size: 125%;
+}
+#messenger-row input
+{
+    width: 100%;
+    padding-top: 15%;
+}
+
+#submit-btn
+{
+    width: 20%;
+    border: none;
+    margin: 2% 40% 0;
+    background-color: red;
+    font-style: italic;
+    border-radius: 0;
+    transition: all 1.5s;
+}
+#submit-btn:hover
 {
     background-color: black;
 }
-#join
+
+
+/* Css Footer */
+.footer
 {
-    padding-top: 64px;
+    background-color: #151412;
+    padding-bottom: 2%;
+}
+.footer-left a
+{
+    text-decoration: none;
+    color: white;
+}
+.footer-left a:hover
+{
+    opacity: 0.8;
 }
 
-/* Footer */
-#footer
+.footer-right a
 {
-    margin-top: 64px;
-    margin-bottom: 32px;
+    text-decoration: none;
+    font-size: 220%;
+    color: white;
+    padding: 5% 1%;
+    transition: all 1.5;
+}
+.footer-right a:hover
+{
+    opacity: 0.8;
+}
+.footer-left
+{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 125%;
+}
+.footer-left h4
+{
+    font-size: 150%;
 }
 .icon-footer
 {
-    font-size: 26px;
-    margin-right: 4px;
-    margin-bottom: 10px;
+    margin-right: 2%;
 }
-.icon-footer:hover
+.footer-right
 {
-    cursor: pointer;
-    opacity: 60%;
+    margin-top: 3%;
+    padding-right: 3%;
 }
-#footer a
+/* Modal */
+#myModal
 {
-    color: black;
-    text-decoration: underline;
+    margin-top: 10%;
+    background-color: rgba(0, 0, 0, 0.322);
+    font-size: 150%;
+}
+.modal-header
+{
+    background-color: bisque;
+}
+#myModal .close
+{
+    padding: 1% 4%;
+    transition: all 1s;
+}
+#myModal .close:hover
+{
+    background-color: red;
+}
+.modal-title
+{
+    font-size: 250%;
+}
+#myModal img
+{
+    width: 30%;
+}
+
+/* Responsive */
+
+    
+
+/* PC */
+@media (min-width: 1024px) and (max-width:1400px)
+{
+    .choose-us .container
+    {
+        width: 80%;
+    }
+    #gallery .thumbnail
+    {
+        min-height: 317px;
+    }
+    #gallery .gallery-title
+    {
+        font-size: 150%;
+    }
+    #gallery .gallery-price
+    {
+        font-size: 130%;
+    }
+    .form
+    {
+        width: 50%;
+    }
+    #submit-btn
+    {
+        width: 24%;
+        margin: 2% 38% 0;
+    }
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    /* Nav Bar */
+    #myNavbar
+    {
+        padding-left: 0;
+        padding-right: 8%;
+    }
+    #logo,#glyphicon
+    {
+        display: none;
+    }
+    /* Special Coffee */
+    #text-special
+    {
+        width: 90%;
+    }
+    /* About-us */
+    #about-us p
+    {
+        width: 100%;
+        font-size: 120%;
+    }   
+    
+    #about-us img
+    {
+        width: 100%;
+    }
+    #about-us .icon
+    {
+        margin: 0% 7%;
+    }
+    /* Why Choose us */
+    .choose-us >p
+    {
+        width: 85%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    .choose-us >.container
+    {
+        width: 60%;
+    }
+    .pdr,.pdl
+    {
+        padding: 0;
+    }
+    .thumbnail
+    {
+        width: 95%;
+        margin-bottom: 6%;
+    }
+    /* Blog */
+    #blog > .container
+    {
+        width: 70%;
+    }
+    #blog > .container .thumbnail
+    {
+        padding-bottom: 2%;
+    }
+    /* About */
+    
+    .about >.container
+    {
+        width: 90%;
+        font-size: 95%;
+    }
+    .about img
+    {
+        width: 20%;
+    }
+    /* Contact */
+    #contact .form
+    {
+        width: 70%;
+    }
+    /* Footer */
+    .footer .footer-right 
+    {
+        margin-top: 7%;
+    }
+}
+
+/* Mobile */
+@media (max-width:740px)
+{
+    /* Navbar */
+    #glyphicon
+    {
+        display: none;
+    }
+    /* Special Coffee */
+    .specialCoffee > .container
+    {
+        width: 100%;
+        font-size: 80%;
+    }
+    #title-special
+    {
+        font-size: 450%;
+        margin-top: 19%;
+    }
+    #text-special
+    {
+        width: 95%;
+    }
+    /* Welcome */
+    .welcome img
+    {
+        width: 80%;
+    }
+    .welcome
+    {
+        font-size: 65%;
+    }
+    /* About Us */
+    #about-us p
+    {
+        width: 100%;
+        text-align: justify;
+    }
+    #about-us button
+    {
+        font-size: 90%;
+        margin-bottom: 15%;
+    }
+    .about-us-left
+    {
+        padding: 0;
+    }
+    .about-us-right img
+    {
+        width: 100%;
+    }
+    .about-us-right .icon i
+    {
+        font-size: 240%;
+    }
+    /* Why Choose Us */
+    .choose-us
+    {
+        font-size: 110%;
+    }
+    .choose-us >.container
+    {
+        width: 80%;
+    }
+    .pdr,.pdl
+    {
+        padding: 0;
+    }
+    /* Gallery */
+    #gallery
+    {
+        padding-bottom: 5%;
+    }
+    #gallery .thumbnail
+    {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    /* Blog */
+    #blog .container
+    {
+        width: 80%;
+    }
+    #blog .thumbnail
+    {
+        width: 100%;
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    /* About */
+    .about
+    {
+        font-size: 70%;
+    }
+    .about .container
+    {
+        width: 100%;
+    }
+    .about img
+    {
+        width: 20%;
+        margin-bottom: 15%;
+    }
+    .about-text
+    {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    #signature
+    {
+        margin-top: 10%;
+    }
+    /* Contact */
+    .form
+    {
+        width: 90%;
+        font-size: 75%;
+    }
+    #submit-btn
+    {
+        width: 24%;
+        margin: 2% 38% 0;
+    }
+    /* Footer */
+    .footer-left
+    {
+        font-size: 110%;
+    }
+    .footer-right
+    {
+        text-align: center;
+        margin-top: 5%;
+    }
+    /* Modal */
+    #myModal
+    {
+        margin-top: 25%;
+    }
 }

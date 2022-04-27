@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>The School</title>
+<head>
+    <title>Lê Thanh Tùng - Batch 171</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -10,340 +10,331 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="icon" href="images/logo (2).png" type="image/x-icon" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="css/style.css"/>
-    <style>
-      html
-      {
-        scroll-behavior: smooth;
-      }
-    </style>
-  </head>
-  <body>
+</head>
+<body>
     <!-- Begin Navbar -->
     <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#myNavbar"
-          >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://www.facebook.com/99thanhtung">
-            <img src="images/logo-01.png" alt="logo" id="logo" />
-          </a>
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://www.facebook.com/99thanhtung">
+              <img src="images/logo.png" alt="logo" id="logo" />
+            </a>
+          </div>
+  
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" class="font1">HOME</a></li>
+              <li><a href="#about-us" class="font1">ABOUT US</a></li>
+              <li><a href="#gallery" class="font1">GALLERY</a></li>
+              <li><a href="#blog" class="font1">BLOG</a></li>
+              <li><a href="#contact" class="font1">CONTACT</a></li>
+              <li><a href="#"></a><img src="images/search.png" alt="" id="logo-nav"></li>
+                <!-- <div class="search">
+                  <input type="text" placeholder="Search">
+                </div> -->
+              <li><a href="#" class="font1" id="glyphicon"><i class="glyphicon glyphicon-align-justify"></i></a></li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <!-- End Navbar -->
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#">HOME</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#"
-                >ACCOUNT <span class="caret"></span
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="Form-Register.html">REGISTER</a></li>
-                <li><a href="Form-Login.html">LOG IN</a></li>
-                <li><a href="#">YOUR ACCOUNT</a></li>
-              </ul>
-            </li>
-            <li><a href="#student">STUDENT</a></li>
-            <li><a href="#choose-school">LOCATION</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-          <form class="navbar-form navbar-right" action="#">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search" />
-              <div class="input-group-btn">
-                <button class="btn btn-default" type="submit">
-                  <i class="glyphicon glyphicon-search"></i>
-                </button>
-              </div>
-            </div>
-          </form>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="Form-Register.html"
-                ><span class="glyphicon glyphicon-user"></span> Sign Up</a
-              >
-            </li>
-            <li>
-              <a href="Form-Login.html"
-                ><span class="glyphicon glyphicon-log-in"></span> Login</a
-              >
-            </li>
-          </ul>
+      <!-- Begin Special Coffee -->
+      <div class="container-fluid specialCoffee font-upper font-white text-center">
+        <div class="container wid80">
+          <h1 class="font-upper-now" id="title-special">SPECIAL COFFEE BEANS</h1>
+          <h4 id="text-special" class="font-san">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h4>
+          <button class="btn font-san" data-toggle="modal" data-target="#myModal" id="btn-readmore">Read More</button>
+        </div>
+      
+      </div>
+      <!-- End Special Coffee -->
+
+      <!-- Begin Welcome -->
+      <div class="container-fluid welcome">
+        <div class="container text-center">
+          <img src="images/A little story about us .png" alt="welcome">
+          <h3 class="font-san font-white" id="welcome-text">Welcome to Life Coffee</h3>
         </div>
       </div>
-    </nav>
-    <!-- End Navbar -->
+      <!-- End Welcome -->
 
-    <!-- Begin Slider -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="images/1.jpg" alt="Autumn" />
-          <div class="carousel-caption">
-            <h3>The School</h3>
-            <p>Our School in the autumn</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="images/2.jpg" alt="Spring" />
-          <div class="carousel-caption">
-            <h3>The School In Spring</h3>
-            <p>Our school in the spring</p>
-          </div>
-        </div>
-
-        <div class="item">
-          <img src="images/3.jpg" alt="Summer" />
-          <div class="carousel-caption">
-            <h3>Season summer</h3>
-            <p>In the summer...</p>
-          </div>
-        </div>
-        <div class="item">
-          <img src="images/4.jpg" alt="Winter" />
-          <div class="carousel-caption">
-            <h3>Winter</h3>
-            <p>And the Winter</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!-- End Slider -->
-
-    <!-- Begin student -->
-    <div class="container text-center width60" id="student">
-      <h4 class="title">OUR STUDENTS</h4>
-      <h4 class="small text-muted small-title">Some of our student</h4>
-      <p class="text-justify pd8">
-        We have created a fictional band website. Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-          <p>- Kitagawa Marin -</p>
-          <img src="images/marin.jpg" alt="" class="student-pic" />
-          <p class="mgt8px">Class 3B</p>
-          <a class="btn btn-info" href="https://sono-bisque-doll-wa-koi-wo-suru.fandom.com/wiki/Marin_Kitagawa">See more info</a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-          <p>- Tomori Nao -</p>
-          <img src="images/tomori.jpg" alt="" class="student-pic" />
-          <p class="mgt8px">Class 3A</p>
-          <a class="btn btn-info" href="https://charlotte.fandom.com/wiki/Nao_Tomori">See more info</a>
-        </div>
-        <div class="col-lg-4 col-md-4 col-xs-12 col-sm-4">
-          <p>- Mitsuha -</p>
-          <img src="images/mitsuha.jpg" alt="" class="student-pic" />
-          <p class="mgt8px">Class 3C</p>
-          <a class="btn btn-info" href="https://kiminonawa.fandom.com/wiki/Mitsuha_Miyamizu">See more info</a>
-
-        </div>
-      </div>
-    </div>
-    <!-- End student -->
-
-    <!-- Begin Choose school -->
-    <div class="container-fluid pd64" id="choose-school">
-      <div class="container width60 text-center text-white">
-        <h4 class="title">CHOOSE SCHOOL</h4>
-        <h4 class="small text-muted small-title">
-          Choose school you want to join
-        </h4>
-        <div class="row line34">
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
-          >
-            Tokyo
-          </p>
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
-          >
-            Available
-          </p>
-        </div>
-        <div class="row line34">
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
-          >
-            Hokaiddo
-          </p>
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
-          >
-            Available
-          </p>
-        </div>
-        <div class="row line34">
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-left"
-          >
-            Chiba
-          </p>
-          <p
-            class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-black white-bg text-right"
-          >
-            Full
-          </p>
-        </div>
-
-        <div class="row text-left mgt8px">
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail white-bg text-black pd0">
-              <img
-                class="width100"
-                src="images/school_1.jpg"
-                alt="school tokyo"
-              />
-              <p class="pd8 mgt8px">Tokyo</p>
-              <p class="text-gray pd8">Tokyo - Japan</p>
-              <p class="text-justify pd8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
-                adipisci perspiciatis maiores eius neque obcaecati
-              </p>
-              <a href="#contact" class="btn btn-success mgb8px btn-choose">Join now !!</a>
+      <!-- Begin About-us -->
+      <div class="container-fluid about-us" id="about-us">
+        <div class="container wid80 font-san">
+          <div class="col-md-6 col-lg-6 font-white about-us-left">
+            <h3>Application</h3>
+            <h3>USE OUR APPLICATION.</h3>
+            <div class="hr1">
+              &nbsp;
             </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minin veniam, quis nostrud exercitation ullamco loboris nisi ut aliquip ex ae commodo consequat. Duis auite irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn btn-about-us"data-toggle="modal" data-target="#myModal">Read More</button>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail white-bg text-black pd0">
-              <img
-                class="width100"
-                src="images/school_2.jpg"
-                alt="school tokyo"
-              />
-              <p class="pd8 mgt8px">Hokkaido</p>
-              <p class="text-gray pd8">Hokkaido - Japan</p>
-              <p class="text-justify pd8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
-                adipisci perspiciatis maiores eius neque obcaecati
-              </p>
-              <a href="#contact" class="btn btn-success mgb8px btn-choose">Join now !!</a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="thumbnail white-bg text-black pd0">
-              <img
-                class="width100"
-                src="images/school_3.jpg"
-                alt="school tokyo"
-              />
-              <p class="pd8 mgt8px">Chiba</p>
-              <p class="text-gray pd8">Chiba - Japan</p>
-              <p class="text-justify pd8">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Excepturi eos magni sunt placeat sit modi ipsam nisi ex,
-                adipisci perspiciatis maiores eius neque obcaecati
-              </p>
-              <a href="#contact" class="btn btn-success mgb8px btn-choose">Join now !!</a>
+          <div class="col-md-6 col-lg-6 pd0 about-us-right">
+            <img src="images/product1.jpg" alt="">
+            <div class="container icon text-center">
+            <i class="glyphicon glyphicon-play-circle about-us-icon"></i>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Choose school -->
+      <!-- End About-us -->
 
-    <!-- Begin Contact -->
-    <div class="container width60 text-center pd64" id="contact">
-      <h4 class="title">CONTACT</h4>
-      <h4 class="small text-muted small-title">
-        Give us your infomation
-      </h4>
-      <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6">
-          <div class="row text-left">
-            <ion-icon name="location-sharp" class="icon"></ion-icon>
-            <p class="inline-block fs18">Tokyo,Japan</p>
+      <!-- Begin Why Choose us -->
+      <div class="container-fluid choose-us font-libertad">
+        <h2 class="title-choose text-center">
+          WHY CHOOSE US ?
+        </h2>
+        <p class="text-center text-choose">The Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+        <div class="container">
+          <div class="col-md-6 col-lg-6 pdr">
+            <h2 class="title-choose text-left">
+              Unlimited Skill
+            </h2>
+            <p class="text-justify text-choose">The Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+
+            <h2 class="title-choose text-left">
+              Unlimited Skill
+            </h2>
+            <p class="text-justify text-choose">The Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </div>
-          <div class="row text-left">
-            <ion-icon name="call-sharp" class="icon"></ion-icon>
-            <p class="inline-block fs18">0123456789</p>
-          </div>
-          <div class="row text-left">
-            <ion-icon name="mail-sharp" class="icon"></ion-icon>
-            <p class="inline-block fs18">tungtudonghoa@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-6 pd0">
-          <div class="row mgb8px">
-              <input type="text" placeholder="Name" class="pull-left" required>
-              <input type="email" placeholder="Email" class="pull-right" required>
-          </div>
-          <div class="row mgb8px">
-            <input type="text" placeholder="Messenger" class="width100" required>
-          </div>
-          <div class="row">
-            <button class="btn btn-success pull-right mgt8px mgb8px">SEND</button>
+          <div class="col-md-6 col-lg-6 pdl">
+            <h2 class="title-choose text-left">
+              Unlimited Skill
+            </h2>
+            <p class="text-justify text-choose">The Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+            <h2 class="title-choose text-left">
+              Unlimited Skill
+            </h2>
+            <p class="text-justify text-choose">The Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End contact -->
-    <!-- Begin map -->
-    <div class="container-flui text-center text-white" id="join">
-      <h4 class="title">JOIN OUR SCHOOL</h4>
-      <h4 class="small text-muted small-title">Remember join our school</h4>
-      <img src="images/map.jpg" alt="" class="width100">
+      <!-- End Why Choose us -->
 
-    </div>
-    <!-- End map -->
-    <!-- Begin footer -->
-    <div class="container text-center" id="footer">
-      <div class="row">
-        <ion-icon class="icon-footer" name="logo-facebook"></ion-icon>
-        <ion-icon class="icon-footer" name="logo-instagram"></ion-icon>
-        <ion-icon class="icon-footer" name="logo-youtube"></ion-icon>
-        <ion-icon class="icon-footer" name="logo-pinterest"></ion-icon>
-        <ion-icon class="icon-footer" name="logo-linkedin"></ion-icon>
+      <!-- Begin Gallery -->
+      <div class="container-fluid gallery" id="gallery">
+        <div class="container">
+          <div class="thumbnail col-md-4 col-lg-4">
+            <div class="image">
+            <img src="images/1.png" alt="Coffee Maker">
+            </div>
+            <div class="thumbnail-text">
+              <h4 class="font-san-bold text-center gallery-title">SUPER ENAMEL COFFEE MAKER</h4>
+              <p class="font-san text-center gallery-price">$20.83</p>
+            </div>
+          </div>
+
+          <div class="thumbnail col-md-4 col-lg-4">
+            <div class="image">
+            <img src="images/2.png" alt="Coffee Maker" id="cream-gold">
+            </div>
+            <div class="thumbnail-text">
+              <h4 class="font-san-bold text-center gallery-title">COFFEE WITH CREAM GOLD COLLECTION</h4>
+              <p class="font-san text-center gallery-price">$20.805</p>
+            </div>
+          </div>
+
+          <div class="thumbnail col-md-4 col-lg-4">
+            <div class="image">
+            <img src="images/3.png" alt="Coffee Maker" id="glass-coffee">
+            </div>
+            <div class="thumbnail-text">
+              <h4 class="font-san-bold text-center gallery-title">GLASS COFFEE JAR WITH WOOD COLLAR</h4>
+              <p class="font-san text-center gallery-price">$20.805</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center font-san-bold">
+          <button class="btn btn-gallery" data-toggle="modal" data-target="#myModal">READ MORE</button>
+        </div>
       </div>
-      <div class="row">
-        <p>Power by <span><a href="https://www.facebook.com/99thanhtung">TTung Tự Động Hóa</a></span></p>
+      <!-- End Gallery -->
+
+      <!-- Begin Blog -->
+      <div class="container-fluid blog" id="blog">
+        <div class="container image text-center">
+          <img src="images/Blog.png" alt="">
+        </div>
+        <div class="container">
+          <div class="thumbnail col-md-6 col-lg-6">
+            <div class="thumbnail-image">
+              <img src="images/4.png" alt="">
+            </div>
+            <div class="blog-thumbnail-content font-san">
+              <h3 class="blog-title font-white">Cafe shop</h3>
+              <h4 class="blog-title-by">by ABC/10.1.2018</h4>
+              <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+            </div>
+          </div>
+
+          <div class="thumbnail col-md-6 col-lg-6">
+            <div class="thumbnail-image">
+              <img src="images/5.png" alt="">
+            </div>
+            <div class="blog-thumbnail-content font-san">
+              <h3 class="blog-title font-white">Cafe bar</h3>
+              <h4 class="blog-title-by">by ABC/10.1.2018</h4>
+              <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+            </div>
+          </div>
+
+          <div class="thumbnail col-md-6 col-lg-6">
+            <div class="thumbnail-image">
+              <img src="images/6.png" alt="">
+            </div>
+            <div class="blog-thumbnail-content font-san">
+              <h3 class="blog-title font-white">Cafe library</h3>
+              <h4 class="blog-title-by">by ABC/10.1.2018</h4>
+              <p class="font-white">Lorem ipsum dolor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</p>
+              <button class="btn-blog" data-toggle="modal" data-target="#myModal">Read More <span><ion-icon name="arrow-forward-outline" class="ion-icon"></ion-icon></span></button>
+            </div>
+          </div>
+          
+        </div>
       </div>
-    </div>
-    <!-- End footer -->
+      <!-- End Blog -->
 
 
-    <script>
-      alert("Welcome to TTung's School ^^");
-    </script>
-  </body>
+      <!-- Begin About -->
+      <div class="container-fluid about text-center font-alex font-white">
+        <div class="container">
+          <img src="images/blog-image.png" alt="">
+          <h3 class="about-text">Lorem ipsum dlor sit amet consectetur adipiscing elit. Aenean feugiat dictum lacus, ut hendrerit mi pulvinar vel. Fusce id nibh at eleifend tristiqu...</h3>
+          <h3 id="signature">- Alex Bean -</h3>
+        </div>
+        
+      </div>
+      <!-- End About -->
+
+      <!-- Begin Contact -->
+      <div class="container-fluid contact" id="contact">
+          <div class="container form">
+            <form action="#contact">
+                <div class="flex-spacebetween">
+                  <div class="input-label">
+                    <label for=""><ion-icon name="person-sharp"></ion-icon></label>
+                    <input type="text" placeholder="Name" id="name">
+                  </div>
+                  <div class="input-label">
+                    <label for=""><ion-icon name="mail"></ion-icon></label>
+                    <input type="Email" placeholder="Email" id="email">
+                  </div>
+                </div>
+                <div class="input-label container-fluid" id="subject-row">
+                  <label for=""><ion-icon name="person-sharp"></ion-icon></label>
+                  <input type="text" placeholder="Subject" id="subject">
+                </div>
+                <div class="input-label container-fluid" id="messenger-row">
+                  <label for="">Messenger
+                  <input type="text" id="messenger">
+                </div>
+                <div class="container-fluid">
+                  <input type="submit" value="SUBMIT" class="btn text-center font-white" id="submit-btn">
+                </div>
+            </form>
+          </div>
+      </div>
+      <!-- End Contact -->
+
+      <!-- Begin Footer -->
+      <div class="container-fluid footer font-white font-libertad">
+      
+          <div class="col-sm-6 col-md-6 col-lg-6 text-center footer-left container">
+            <h4>CONTACT US</h4>
+            <a href=""><ion-icon class="icon-footer" name="location-outline"></ion-icon> ABC, ĐÀ NẴNG <br></a>
+            <a href=""><ion-icon class="icon-footer" name="call-sharp"></ion-icon> 012456789 <br></a>
+            <a href=""><ion-icon class="icon-footer" name="mail"></ion-icon>Abcdbabas@gmail.com</a>
+            
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6 text-right footer-right">
+            <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="https://twitter.com/?lang=vi"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+            <a href="https://www.pinterest.com/"><ion-icon name="logo-pinterest"></ion-icon></a>
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
+        
+        
+      </div>
+      <!-- End Footer -->
+
+      <!--BEGIN MODAL -->
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+      
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title font-alex">Wait a second...</h4>
+            </div>
+            <div class="modal-body text-center font-upper-now">
+              <p>This function is in the process of further development. Please Wait !!</p>
+              <img src="images/Happy_smiley_face.png" alt="">
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+      <!--END MODAL -->
+
+
+
+      <!-- JavaScript -->
+      <script>
+        document.getElementById("submit-btn").onclick=function(){check()};
+        function check()
+        {
+          var name = document.getElementById("name").value;
+          var email = document.getElementById("email").value;
+          var subject = document.getElementById("subject").value;
+          var messenger = document.getElementById("messenger").value;
+          if (name=="")
+          {
+            alert("Give us your name !");
+          }
+          else if (email=="")
+          {
+            alert("Please fill email !!")
+          }
+          else if (subject=="")
+          {
+            alert("Please fill subject !!")
+          }
+          else if (messenger=="")
+          {
+            alert("Please give your messenger !!")
+          }
+          else
+          {
+            alert("Your messenger has been sent ! Thank you <3");
+            document.getElementById("name").value="";
+            document.getElementById("email").value="";
+            document.getElementById("subject").value="";
+            document.getElementById("messenger").value="";
+            document.getElementById("name").focus="";
+          }
+
+        }
+      </script>
+</body>
 </html>
